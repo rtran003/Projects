@@ -9,11 +9,11 @@ import re
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
-# Random Responses
-responses = ["yurrr", "hell yeah G", "damnn rightt"]
+# Random Responses (User can add a list of responses they prefer)
+responses = []
 
 # Key word to trigger responses
-keywords = ["right, eric?", "right eric?", "right eric"]
+keywords = []
 
 # Dictionary to store the user's image for session
 user_images = {}
@@ -73,7 +73,7 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-# Check if the word 'fuwamoco' is mentioned in the message
+# Check if the a selected key word is mentioned in the message
 @bot.event
 async def on_message(message):
     # Prevents the bot from responding to itself
@@ -277,7 +277,7 @@ async def clear(ctx, amount: int):
     await ctx.send(f"Successfully deleted {amount} messages!", delete_after=5)  # Sends a success message and deletes it after 5 seconds.
 
 
-#Guess the word
+# Guess the word
 @bot.command(name="guessword")
 async def guessword(ctx):
     """Start a new 'Guess the Word' game."""
@@ -298,7 +298,7 @@ async def guessword(ctx):
     await ctx.send(f"Word: {word_display}\nAttempts left: 6")
 
 
-#Users make a guess
+# Users make a guess
 @bot.command(name="guess")
 async def guess(ctx, letter: str):
     """Make a guess by guessing a letter."""
@@ -411,7 +411,7 @@ def determine_winner(choice1, choice2):
     return -1  # Player 2 wins
 
 
-#Get help
+# Get help
 @bot.command(name="customhelp")
 async def custom_help(ctx):
     """List all available commands with descriptions."""
@@ -436,3 +436,4 @@ async def custom_help(ctx):
     await ctx.send(help_message)
 
 bot.run("")
+

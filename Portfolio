@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>INFS 3800 Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #2b2b2b;
+                background-color: #f7f7f7;
+                line-height: 1.5;
+            }
+
+            header {
+                background-color: #1f2937;
+                color: #ffffff;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0 0 6px 0;
+                font-size: 2.2em;
+            }
+
+            header p {
+                margin: 0;
+                font-size: 1.1em;
+                color: #d1d5db;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 30px 20px;
+            }
+
+            .profile-picture {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                background-color: #e5e7eb;
+                border: 3px solid #ffffff;
+                box-shadow: 0 0 0 3px #9ca3af;
+                overflow: hidden;
+                margin: -60px auto 20px auto;
+            }
+
+            .profile-picture img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            section {
+                background-color: #ffffff;
+                border: 1px solid #e5e7eb;
+                border-radius: 6px;
+                padding: 20px 25px;
+                margin-bottom: 25px;
+            }
+
+            section h2 {
+                margin-top: 0;
+                border-bottom: 2px solid #1f2937;
+                padding-bottom: 8px;
+                display: inline-block;
+            }
+
+            .placeholder {
+                color: #6b7280;
+                font-style: italic;
+            }
+
+            .entry {
+                margin-bottom: 15px;
+            }
+
+            .entry-title {
+                font-weight: bold;
+            }
+
+            .entry-subtitle {
+                color: #4b5563;
+                font-size: 0.95em;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px;
+                color: #6b7280;
+                font-size: 0.9em;
+            }
+        </style>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <header>
+            <h1>Ryan Tran</h1>
+            <p>Information Systems Student</p>
+        </header>
+
+        <div class="container">
+
+            <div class="profile-picture">
+                <img src="img/Portfolio.png" alt="Ryan Tran profile picture">
+            </div>
+
+            <!-- Introduction -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm a senior at the University of Colorado Colorado Springs, pursuing a
+                    Bachelor of Science in Information Technology. I also hold an Associate of
+                    Science in Computer and Information Sciences from Pikes Peak State College,
+                    along with certifications in IT and Security. Skilled in Microsoft Power BI
+                    and marketing, I'm motivated to apply my knowledge to meaningful real-world
+                    projects.
+                </p>
+            </section>
+
+            <!-- Academics -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="entry">
+                    <div class="entry-title">University of Colorado Colorado Springs</div>
+                    <div class="entry-subtitle">B.S. in Information Systems and Technology — Expected Aug 2027</div>
+                    <p><strong>GPA:</strong> <span class="placeholder">3.7</span></p>
+                    <p><strong>Relevant Coursework:</strong></p>
+                    <ul>
+                        <li>Intro to Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Programming in C</li>
+                        <li>Intro to Unix</li>
+                        <li>Info Systems and Business Intelligence</li>
+                        <li>Intro to Microeconomics</li>
+                        <li>Intro to Macroeconomics</li>
+                        <li>Intro to Accounting</li>
+                        <li>Intro to Managerial Accounting</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-title">[High School or Additional School, if applicable]</div>
+                    <div class="entry-subtitle">[Dates]</div>
+                </div>
+            </section>
+
+           <!-- Experience -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="entry">
+                    <div class="entry-title">Student Intern</div>
+                    <div class="entry-subtitle">Crossland Colorado — Jan 2026 to May 2026</div>
+                    <ul>
+                        <li>Built a competitive analysis tracker in Excel with pricing comparisons across 3–5 competitors, reducing research synthesis time by ~30%.</li>
+                        <li>Evaluated 2–3 application software platforms for scheduling and dispatch, benchmarking automated booking, real-time coordination, and scalability to support a technical consultation.</li>
+                        <li>Synthesized research findings into a one-page executive pitch covering key industry segments, competitive positioning, and recommended technology solutions.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-title">Student Intern</div>
+                    <div class="entry-subtitle">RISE Southeast — Aug 2025 to Dec 2025</div>
+                    <ul>
+                        <li>Designed and produced a 10–20 page Mentorship Guidebook using Microsoft Word and Excel for 10–20 high school students, featuring structured data tables and multi-pathway planning tools.</li>
+                        <li>Built and delivered interactive STEM lab sessions using Python, HTML5, and GitHub for a cohort of youth advisory council members.</li>
+                        <li>Managed project timelines and deliverables across multiple concurrent workstreams in a program serving a diverse student population.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-title">Barista/Cashier</div>
+                    <div class="entry-subtitle">Bubbles n' Bites — Sep 2022 to Dec 2024</div>
+                    <ul>
+                        <li>Provided client-focused customer service in a fast-paced environment, addressing customer needs and supporting positive experiences.</li>
+                        <li>Managed inventory, restocked supplies, and maintained a clean, organized café environment.</li>
+                        <li>Collaborated with team members to streamline workflow and reduce customer wait times during peak hours.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <p class="placeholder">
+                    Python, Java, C, Unix, R, Visual Studio, GitHub, Git, 
+                    Eclipse, Linux, RStudio, Docker, Matplotlib, Ubuntu, 
+                    MS Office, Power BI, HTML, SQL, HTML, CSS
+                </p>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="entry">
+                    <div class="entry-title">Ticketing System and Management</div>
+                    <div class="entry-subtitle">Spiceworks</div>
+                    <ul>
+                        <li>Managed 50+ weekly IT support tickets in Spiceworks, maintaining a sub-2-hour response time and 90%+ SLA closure rate.</li>
+                        <li>Escalated 100% of Tier 1 issues to Tier 2/3 teams with detailed notes, reducing resolution time by 30% and minimizing repeat tickets.</li>
+                        <li>Developed 15+ knowledge base articles, decreasing recurring support requests by 25% and accelerating technician onboarding.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-title">Active Directory Project</div>
+                    <div class="entry-subtitle">PowerShell, Windows Server</div>
+                    <ul>
+                        <li>Deployed and configured an enterprise-grade Active Directory environment on HackTheBox, simulating real-world IT infrastructure.</li>
+                        <li>Automated provisioning and group management for 0–25 user accounts using PowerShell scripts.</li>
+                        <li>Enforced domain-wide security policies through Group Policy Objects (GPOs), documenting repeatable processes analogous to standard operating procedures.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-title">Power BI Portfolio Dashboard</div>
+                    <div class="entry-subtitle">Power BI, Excel</div>
+                    <ul>
+                        <li>Built an interactive Power BI dashboard comparing sales and performance data across Walmart and Amazon to identify trends and inform business choices.</li>
+                        <li>Connected and modeled data from multiple retail sources in Excel to create unified reporting views across stores.</li>
+                        <li>Analyzed pricing, volume, and performance metrics across both platforms to surface insights and support data-driven strategy recommendations.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Contact -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Email: <a href="mailto:your.email@example.com" class="placeholder">tranthanhryan2015@gmail.com</a><br>
+                    LinkedIn: <a href="https://www.linkedin.com/in/ryan-tran-96a432301/" target="_blank" rel="noopener noreferrer" class="placeholder">LinkedIn</a><br>
+                    Phone: <span class="placeholder">719-534-3304</span>
+                </p>
+            </section>
+
+        </div>
+
+        <footer>
+            &copy; 2026 Ryan Tran. Built for INFS 3800.
+        </footer>
+
+    </body>
+</html>
